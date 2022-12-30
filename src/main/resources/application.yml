@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    hikari:
+      transaction-isolation: TRANSACTION_REPEATABLE_READ
+#      transaction-isolation: TRANSACTION_SERIALIZABLE
+  jpa:
+    properties:
+      hibernate:
+  #        format_sql: true
+  mvc:
+    pathmatch:
+      # for swagger
+      matching-strategy: ant-path-matcher
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
+    org.hibernate.engine.transaction.internal.TransactionImpl: debug

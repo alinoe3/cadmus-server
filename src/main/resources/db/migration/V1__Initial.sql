@@ -5,9 +5,9 @@ CREATE TABLE app_info
     about VARCHAR(500) NOT NULL
 );
 
-CREATE SEQUENCE person_seq;
+CREATE SEQUENCE people_seq;
 
-CREATE TABLE person
+CREATE TABLE people
 (
     id         BIGINT PRIMARY KEY,
     login      VARCHAR(20) NOT NULL,
@@ -19,15 +19,15 @@ CREATE TABLE person
     CONSTRAINT person_email_unq UNIQUE (email)
 );
 
-CREATE SEQUENCE post_seq;
+CREATE SEQUENCE posts_seq;
 
-CREATE TABLE post
+CREATE TABLE posts
 (
     id            BIGINT PRIMARY KEY,
-    title         VARCHAR(200)        NOT NULL,
-    introduction  VARCHAR(2000)       NOT NULL,
+    title         VARCHAR(200)   NOT NULL,
+    introduction  VARCHAR(2000)  NOT NULL,
     content       VARCHAR(65535) NOT NULL,
-    author_id     BIGINT              NOT NULL,
-    creation_date TIMESTAMP           NOT NULL,
-    CONSTRAINT post_person_fk FOREIGN KEY (author_id) REFERENCES person (id)
+    author_id     BIGINT         NOT NULL,
+    creation_date TIMESTAMP      NOT NULL,
+    CONSTRAINT post_person_fk FOREIGN KEY (author_id) REFERENCES people (id)
 );

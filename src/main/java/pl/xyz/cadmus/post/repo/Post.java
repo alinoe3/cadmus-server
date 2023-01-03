@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @ToString(of = {"id", "title"})
 @Entity
-@Table(name = "post")
+@Table(name = "posts")
 public class Post {
 
     @Id

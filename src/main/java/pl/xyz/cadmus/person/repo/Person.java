@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Entity
-@Table(name = "person")
+@Table(name = "people")
 public class Person {
 
     @Id

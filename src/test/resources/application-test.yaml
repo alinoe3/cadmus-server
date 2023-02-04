@@ -8,3 +8,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.HSQLDialect
+  flyway:
+    locations: db/migration/hsqldb

@@ -8,6 +8,8 @@ import org.springframework.test.context.ActiveProfiles;
 import pl.xyz.cadmus.appinfo.repo.AppInfo;
 import pl.xyz.cadmus.appinfo.repo.AppInfoRepository;
 
+import java.sql.Timestamp;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 

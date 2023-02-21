@@ -24,10 +24,10 @@ CREATE SEQUENCE posts_seq;
 CREATE TABLE posts
 (
     id            BIGINT PRIMARY KEY,
-    title         VARCHAR(200)   NOT NULL,
-    introduction  VARCHAR(2000)  NOT NULL,
-    content       VARCHAR(65535) NOT NULL,
-    author_id     BIGINT         NOT NULL,
-    creation_date TIMESTAMP      NOT NULL,
+    title         VARCHAR(200)  NOT NULL,
+    introduction  VARCHAR(2000) NOT NULL,
+    content       MEDIUMTEXT    NOT NULL,
+    author_id     BIGINT        NOT NULL,
+    creation_date TIMESTAMP     NOT NULL,
     CONSTRAINT post_person_fk FOREIGN KEY (author_id) REFERENCES people (id)
 );

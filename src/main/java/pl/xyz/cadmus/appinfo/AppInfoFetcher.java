@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.xyz.cadmus.appinfo.repo.AppInfo;
 import pl.xyz.cadmus.appinfo.repo.AppInfoRepository;
 
-
 @Service
 @Transactional(readOnly = true)
 public class AppInfoFetcher {

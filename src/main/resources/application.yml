@@ -4,9 +4,10 @@ spring:
       transaction-isolation: TRANSACTION_REPEATABLE_READ
 #      transaction-isolation: TRANSACTION_SERIALIZABLE
   jpa:
+    open-in-view: false
     properties:
       hibernate:
-        generate_statistics: true
+  #        generate_statistics: true
   #        format_sql: true
   mvc:
     pathmatch:

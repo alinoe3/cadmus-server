@@ -18,9 +18,6 @@
 
     <properties>
         <java.version>18</java.version>
-
-        <springofx-swagger.version>2.9.2</springofx-swagger.version>
-        <springfox-boot.version>3.0.0</springfox-boot.version>
     </properties>
 
     <dependencies>

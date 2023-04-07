@@ -30,6 +30,6 @@ public class Post {
     @JoinColumn(name = "author_id")
     private Person author;
 
-    @Column(name = "creation_date")
+    @Column(name = "created_date")
     private LocalDateTime creationDate;
 }

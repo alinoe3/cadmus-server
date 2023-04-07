@@ -16,8 +16,6 @@ import pl.xyz.cadmus.post.repo.PostRepository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
-import java.util.stream.Collectors;
 
 
 @Service
@@ -69,9 +67,9 @@ public class PostFinder {
                         .introduction(post.getIntroduction())
                         .author(buildAuthor(post.getAuthor()))
                         .creationDate(post.getCreationDate())
-                        .commentCount(new Random(432).nextInt(20))
+                        .commentCount(1)
                         .build()))
-                .collect(Collectors.toList());
+                .toList();
     }
 
     private static PersonView buildAuthor(Person author) {

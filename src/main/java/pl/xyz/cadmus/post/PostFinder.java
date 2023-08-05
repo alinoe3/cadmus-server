@@ -53,7 +53,7 @@ public class PostFinder {
                 .withTitle(post.getTitle())
                 .withIntroduction(post.getIntroduction())
                 .withContent(post.getContent())
-                .withCreationDate(post.getCreatedDate())
+                .withCreatedDate(post.getCreatedDate())
                 .withAuthor(buildAuthor(post.getAuthor()))
                 .build();
     }

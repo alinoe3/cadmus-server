@@ -17,6 +17,6 @@ public class PostView {
     private String introduction;
     private String content;
     private PersonView author;
-    private LocalDateTime creationDate;
+    private LocalDateTime createdDate;
     private Integer commentCount;
 }

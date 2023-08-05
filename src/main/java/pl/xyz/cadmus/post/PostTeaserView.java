@@ -16,6 +16,6 @@ public class PostTeaserView {
     private String title;
     private String introduction;
     private PersonView author;
-    private LocalDateTime creationDate;
+    private LocalDateTime createdDate;
     private Integer commentCount;
 }

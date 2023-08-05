@@ -66,7 +66,7 @@ public class PostFinder {
                         .title(post.getTitle())
                         .introduction(post.getIntroduction())
                         .author(buildAuthor(post.getAuthor()))
-                        .creationDate(post.getCreatedDate())
+                        .createdDate(post.getCreatedDate())
                         .commentCount(1)
                         .build()))
                 .toList();

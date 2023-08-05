@@ -53,7 +53,7 @@ public class PostFinder {
                 .withTitle(post.getTitle())
                 .withIntroduction(post.getIntroduction())
                 .withContent(post.getContent())
-                .withCreationDate(post.getCreationDate())
+                .withCreationDate(post.getCreatedDate())
                 .withAuthor(buildAuthor(post.getAuthor()))
                 .build();
     }
@@ -66,7 +66,7 @@ public class PostFinder {
                         .title(post.getTitle())
                         .introduction(post.getIntroduction())
                         .author(buildAuthor(post.getAuthor()))
-                        .creationDate(post.getCreationDate())
+                        .creationDate(post.getCreatedDate())
                         .commentCount(1)
                         .build()))
                 .toList();
@@ -93,6 +93,6 @@ public class PostFinder {
 
                     return sortTmp;
                 })
-                .orElse(Sort.by("CreationDate").descending());
+                .orElse(Sort.by("createdDate").descending());
     }
 }

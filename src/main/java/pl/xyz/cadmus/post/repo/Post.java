@@ -31,5 +31,5 @@ public class Post {
     private Person author;
 
     @Column(name = "created_date")
-    private LocalDateTime creationDate;
+    private LocalDateTime createdDate;
 }

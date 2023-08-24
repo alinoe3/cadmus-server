@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  web:
+    image: alinoe3/cadmus-server:0.0.1
+    ports:
+      - 8080:8080
+    volumes:
+      - volume:/opt/data
+    environment:
+      DB_HOST: 192.168.0.100:5432
+      spring_profiles_active: postgresql
+    secrets:
+      - db_credentials
+networks:
+  network:
+    driver: bridge
+volumes:
+  volume:
+secrets:
+  db_credentials:
+    file: db_credentials.yaml
